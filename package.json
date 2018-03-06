@@ -68,7 +68,9 @@
     "dev": "webpack-dev-server",
     "test": "jest && codecov",
     "preversion": "npm jest",
-    "postversion": "npm run build && git add -A static && node ./zip-release.js && git push && git push --tags"
+    "postversion": "npm run build && git add -A static && node ./zip-release.js && git push && git push --tags",
+    "postinstall": "npm run build",
+    "start": "node server.js"
   },
   "release": {
     "files": [
@@ -86,6 +88,7 @@
     "lint"
   ],
   "dependencies": {
+    "express": "^4.16.2",
     "request": "^2.83.0"
   }
 }
