@@ -1,490 +1,549 @@
 <!doctype html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CLEAN MARKUP = GOOD KARMA.
-      Hi source code lover,
+  <!-- CLEAN MARKUP = GOOD KARMA.
+  Hi source code lover,
 
-      you're a curious person and a fast learner ;)
-      Let's make something beautiful together. Contribute on Github:
-      https://github.com/webslides/webslides
+  you're a curious person and a fast learner ;)
+  Let's make something beautiful together. Contribute on Github:
+  https://github.com/webslides/webslides
 
-      Thanks!
+  Thanks!
+-->
+
+<!-- SEO -->
+<title>WebSlides Keynote: Make a Keynote presentation using HTML</title>
+<meta name="description" content="WebSlides is the easiest way to make HTML presentations. Just essential features, clean code, and lovely CSS.">
+
+<!-- URL CANONICAL -->
+<!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+<!-- CSS Base -->
+<link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+
+<!-- Optional - CSS SVG Icons (Font Awesome) -->
+<link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+
+<!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+<!-- FACEBOOK -->
+<meta property="og:url" content="http://your-url.com/permalink"> <!-- EDIT -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
+<meta property="og:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
+<meta property="og:updated_time" content="2017-01-04T17:32:14"> <!-- EDIT -->
+<meta property="og:image" content="../static/images/share-webslides.jpg" > <!-- EDIT -->
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+<meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+<meta name="twitter:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
+<meta name="twitter:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
+<meta name="twitter:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
+
+<!-- FAVICONS -->
+<link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+<link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+<link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+<link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+<link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+<link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+<link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+
+<!-- Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#333333">
+</head>
+<body>
+  <header role="banner">
+    <nav role="navigation">
+      <p class="logo"><a href="../index.html" title="WebSlides">WebSlides</a></p>
+      <ul>
+        <li class="github">
+          <a rel="external" href="https://github.com/webslides/webslides" title="Github">
+            <svg class="fa-github">
+              <use xlink:href="#fa-github"></use>
+            </svg>
+            <em>WebSlides</em>
+          </a>
+        </li>
+        <li class="twitter">
+          <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+            <svg class="fa-twitter">
+              <use xlink:href="#fa-twitter"></use>
+            </svg>
+            <em>@WebSlides</em>
+          </a>
+        </li>
+        <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article id="webslides">
+
+      <!-- Quick Guide
+      - Each parent <section> in the <article id="webslides"> element is an individual slide.
+      - Vertical sliding = <article id="webslides" class="vertical">
+      - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
     -->
 
-    <!-- SEO -->
-    <title>WebSlides Keynote: Make a Keynote presentation using HTML</title>
-    <meta name="description" content="WebSlides is the easiest way to make HTML presentations. Just essential features, clean code, and lovely CSS.">
+    <section class="bg-apple aligncenter">
+      <!--.wrap = container (width: 90%) -->
+      <span class="background dark" style="background-image:url('http://3.bp.blogspot.com/-7g7_Ux9jehc/VeDTijx08YI/AAAAAAAARIw/F3Rnfr2HpHo/s1600/deathstar.jpg')"></span>
+      <div class="wrap">
 
-    <!-- URL CANONICAL -->
-    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+        <h1>Projeto "Deathstar"</h1>
+        <p class="text-intro">Calma... isso é só um nome fictício, enquanto ainda não temos o nome definitivo.</p>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+      </div>
+      <!-- .end .wrap -->
+    </section>
 
-    <!-- CSS Base -->
-    <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+    <section class="bg-apple aligncenter">
+      <!--.wrap = container (width: 90%) -->
+      <div class="wrap size-50">
+        <h1>Objetivo</h1>
+        <p class="text-intro">Fazer a ponte do lead qualifidado com o fornecedor de serviço</p>
+      </div>
+      <!-- .end .wrap -->
+    </section>
 
-    <!-- Optional - CSS SVG Icons (Font Awesome) -->
-    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
-
-    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
-
-    <!-- FACEBOOK -->
-    <meta property="og:url" content="http://your-url.com/permalink"> <!-- EDIT -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
-    <meta property="og:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
-    <meta property="og:updated_time" content="2017-01-04T17:32:14"> <!-- EDIT -->
-    <meta property="og:image" content="../static/images/share-webslides.jpg" > <!-- EDIT -->
-
-    <!-- TWITTER -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
-    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
-    <meta name="twitter:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
-    <meta name="twitter:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
-    <meta name="twitter:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
-
-    <!-- FAVICONS -->
-    <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
-    <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
-    <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
-    <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
-    <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
-    <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
-    <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
-
-    <!-- Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#333333">
-  </head>
-  <body>
-    <header role="banner">
-      <nav role="navigation">
-        <p class="logo"><a href="../index.html" title="WebSlides">WebSlides</a></p>
-        <ul>
-          <li class="github">
-            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
-              <svg class="fa-github">
-                <use xlink:href="#fa-github"></use>
-              </svg>
-              <em>WebSlides</em>
-            </a>
-          </li>
-          <li class="twitter">
-            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
-              <svg class="fa-twitter">
-                <use xlink:href="#fa-twitter"></use>
-              </svg>
-              <em>@WebSlides</em>
-            </a>
-          </li>
-          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
-        </ul>
-      </nav>
-    </header>
-
-    <main role="main">
-      <article id="webslides">
-
-        <!-- Quick Guide
-          - Each parent <section> in the <article id="webslides"> element is an individual slide.
-          - Vertical sliding = <article id="webslides" class="vertical">
-          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
-        -->
-
-        <section class="bg-apple aligncenter">
-          <!--.wrap = container (width: 90%) -->
-          <span class="background dark" style="background-image:url('http://3.bp.blogspot.com/-7g7_Ux9jehc/VeDTijx08YI/AAAAAAAARIw/F3Rnfr2HpHo/s1600/deathstar.jpg')"></span>
-          <div class="wrap">
-
-            <h1>Projeto "Deathstar"</h1>
-            <p class="text-intro">Calma... isso é só um nome fictício, enquanto ainda não temos o nome definitivo.</p>
-
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple aligncenter">
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap size-50">
-            <h1>Objetivo</h1>
-            <p class="text-intro">Fazer a ponte do lead qualifidado com o fornecedor de serviço</p>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple">
-          <div class="wrap">
-            <h2>Objetivos Específicos</h2>
-            <ul class="flexblock features">
-              <li>
-                <div>
-                  <h2 style="text-align:center;padding: 45px 0px;">
-                    Geração de agendamentos
-                  </h2>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2 style="text-align:center;padding: 20px 0px;">
-                    Indicação de melhores produtos de acordo com o cliente
-                  </h2>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2 style="text-align:center;padding: 5px 0px;">
-                    Conversa para obtenção de dados e classificação do usuário de acordo com parâmetros pré-estabelecidos
-                  </h2>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2 style="text-align:center;padding: 20px 0px;">
-                    Possibilidade montagem de fluxos de conversa e resultado
-                  </h2>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2 style="text-align:center;padding: 30px 0px;">
-                    Relacionamento com consultor
-                  </h2>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2 style="text-align:center;padding: 5px 0px;">
-                    Opção do cliente personalizar cores do simulador e inclusão da logomarca
-                  </h2>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="bg-apple aligncenter">
-          <!--.wrap = container (width: 90%) -->
-            <h1>Resultados</h1>
-            <p class="text-intro">Em 1 mês de funcionamento do MVP.</p>
-
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple aligncenter">
-          <span class="background dark" style="background-image:url('https://source.unsplash.com/pb_lF8VWaPU/')"></span>
-          <div class="wrap">
-            <h2 class="text-data">1.426</h2>
-            <h3>Acessaram o Simulador</h3>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple aligncenter">
-          <span class="background dark" style="background-image:url('https://source.unsplash.com/pb_lF8VWaPU/')"></span>
-          <div class="wrap">
-            <h2 class="text-data">1050</h2>
-            <h3>Informaram nome, e-mail e telefone</h3>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple aligncenter">
-          <span class="background dark" style="background-image:url('https://source.unsplash.com/pb_lF8VWaPU/')"></span>
-          <div class="wrap">
-            <h2 class="text-data">368</h2>
-            <h3>Se interessaram em ver mais sobre o plano sugerido</h3>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple aligncenter">
-          <span class="background dark" style="background-image:url('https://source.unsplash.com/pb_lF8VWaPU/')"></span>
-          <div class="wrap">
-            <h2 class="text-data">127</h2>
-            <h3>Solicitaram "Receber Contato"</h3>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple aligncenter">
-          <div class="wrap zoomIn">
-            <h1>
-              <svg class="fa-apple">
-                <use xlink:href="#fa-lightbulb-o"></use>
-              </svg>
-              Proposta
-            </h1>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple">
-
-          <div class="wrap">
-            <div class="content-left">
-              <h1 style="font-size: 200px;margin: 162px;">V1</h1>
-            </div>
-            <div class="content-right">
-              <ul class="flexblock specs">
-                <li>
-                  <div>
-                    <svg class="fa-bolt">
-                      <use xlink:href="#fa-paint-brush"></use>
-                    </svg>
-                    <h2>Estilização</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <svg class="fa-globe">
-                      <use xlink:href="#fa-comments-o"></use>
-                    </svg>
-                    <h2>Montagem de fluxo de conversa de acordo com a necessidade do negócio do cliente e estabelecimento dos parâmetros que irão classificar o lead.</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <svg class="fa-lock">
-                      <use xlink:href="#fa-line-chart"></use>
-                    </svg>
-                    <h2>Melhoria nas integrações com RD e Analytics e Possibilidade de outras integrações</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <svg class="fa-lock">
-                      <use xlink:href="#fa-calendar"></use>
-                    </svg>
-                    <h2>Integração com Google Agenda para geração de agendamentos.</h2>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple">
-          <div class="wrap">
-            <h2>Problemas e Oportunidades</h2>
-            <ul class="flexblock features">
-              <li>
-                <div>
-                  <h2 >
-                    Dificuldade de escolher ferramentas para captação de leads
-                  </h2>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2 >
-                    Dificuldade para configurar essas ferramentas
-                  </h2>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                   Descentralização da informação
-                  </h2>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                    leads desqualificados, causando investimento de tempo e dinheiro em oportunidades que não serão convertidas em clientes por estar fora do foco da empresa
-                  </h2>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="bg-apple">
-          <div class="wrap">
-            <h2>Soluções</h2>
-            <ul class="flexblock features">
-              <li>
-                <div>
-                  <h2>
-                    Qualificação de leads.
-                  </h2>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                   Geração de agendamentos.
-                  </h2>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                    Centralizar a entrada de leads por um único sistema, porém o lead poderá acessar por multicanais.
-                  </h2>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="bg-apple aligncenter">
-          <!--.wrap = container (width: 90%) -->
-            <h1>Diferencial</h1>
-            <p class="text-intro">Qualificação de leads através de uma conversa que será aproximada a uma conversa com um ser humano, poupando a utilização de um pré-vendas.</p>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple aligncenter">
-          <!--.wrap = container (width: 90%) -->
-            <h1>Monetização</h1>
-            <p class="text-intro">Disponibilização de 3 níveis de planos, contemplando diferentes níveis de funcionalidades. Básico, Intermediário e Avançado</p>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple">
-          <div class="wrap">
-
-            <div class="content-left">
-              <img style="width: 335px;margin-left: 100px;" src="https://www.drift.com/wp-content/uploads/2016/10/Drift_logo_white.svg">
-            </div>
-            <div class="content-right">
-              <h2>
-                Concorrente / Benchmark
+    <section class="bg-apple">
+      <div class="wrap">
+        <h2>Objetivos Específicos</h2>
+        <ul class="flexblock features">
+          <li>
+            <div>
+              <h2 style="text-align:center;padding: 45px 0px;">
+                Geração de agendamentos
               </h2>
-              <p>Já existe uma empresa que oferece um serviço parecido, porém muito básico.</p>
-              <p>
-                <a href="https://www.drift.com/" class="button ghost" title="Abrir" target="_blank">Abrir &rsaquo;</a>
-              </p>
             </div>
+          </li>
+          <li>
+            <div>
+              <h2 style="text-align:center;padding: 20px 0px;">
+                Indicação de melhores produtos de acordo com o cliente
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h2 style="text-align:center;padding: 5px 0px;">
+                Conversa para obtenção de dados e classificação do usuário de acordo com parâmetros pré-estabelecidos
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h2 style="text-align:center;padding: 20px 0px;">
+                Possibilidade montagem de fluxos de conversa e resultado
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h2 style="text-align:center;padding: 30px 0px;">
+                Relacionamento com consultor
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h2 style="text-align:center;padding: 5px 0px;">
+                Opção do cliente personalizar cores do simulador e inclusão da logomarca
+              </h2>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bg-apple aligncenter">
+      <!--.wrap = container (width: 90%) -->
+      <h1>Resultados</h1>
+      <p class="text-intro">Em 1 mês de funcionamento do MVP.</p>
+
+    </div>
+    <!-- .end .wrap -->
+  </section>
+
+  <section class="bg-apple aligncenter">
+    <span class="background dark" style="background-image:url('https://source.unsplash.com/pb_lF8VWaPU/')"></span>
+    <div class="wrap">
+      <h2 class="text-data">1.426</h2>
+      <h3>Acessaram o Simulador</h3>
+    </div>
+    <!-- .end .wrap -->
+  </section>
+
+  <section class="bg-apple aligncenter">
+    <span class="background dark" style="background-image:url('https://source.unsplash.com/pb_lF8VWaPU/')"></span>
+    <div class="wrap">
+      <h2 class="text-data">1050</h2>
+      <h3>Informaram nome, e-mail e telefone</h3>
+    </div>
+    <!-- .end .wrap -->
+  </section>
+
+  <section class="bg-apple aligncenter">
+    <span class="background dark" style="background-image:url('https://source.unsplash.com/pb_lF8VWaPU/')"></span>
+    <div class="wrap">
+      <h2 class="text-data">368</h2>
+      <h3>Se interessaram em ver mais sobre o plano sugerido</h3>
+    </div>
+    <!-- .end .wrap -->
+  </section>
+
+  <section class="bg-apple aligncenter">
+    <span class="background dark" style="background-image:url('https://source.unsplash.com/pb_lF8VWaPU/')"></span>
+    <div class="wrap">
+      <h2 class="text-data">127</h2>
+      <h3>Solicitaram "Receber Contato"</h3>
+    </div>
+    <!-- .end .wrap -->
+  </section>
+
+  <section class="bg-apple">
+    <div class="wrap">
+      <h2>Problemas e Oportunidades</h2>
+      <ul class="flexblock features">
+        <li>
+          <div>
+            <h2 >
+              Dificuldade de escolher ferramentas para captação de leads
+            </h2>
           </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="fullscreen bg-black aligncenter">
-          <div class="embed dark">
-             <video autoplay loop muted poster="https://webslides.tv/static/images/peggy.jpg">
-             <source src="https://webslides.tv/static/videos/peggy.mp4" type="video/mp4">
-            </video>
-          </div><!-- .embed -->
-          <!-- .wrap = container (width: 90%) -->
-          <div class="wrap size-50">
-            <h1><strong>Mais uma coisa...</strong></h1>
-            <h4>Já estamos pensando no futuro</h4>
+        </li>
+        <li>
+          <div>
+            <h2 >
+              Dificuldade para configurar essas ferramentas
+            </h2>
           </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple">
-
-          <div class="wrap">
-            <div class="content-left">
-              <h1 style="font-size: 200px;margin: 162px;">V2</h1>
-            </div>
-            <div class="content-right">
-              <ul class="flexblock specs">
-                <li>
-                  <div>
-                    <svg class="fa-bolt">
-                      <use xlink:href="#fa-bolt"></use>
-                    </svg>
-                    <h2>Melhorias de funcionalidades da V1</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <svg class="fa-globe">
-                      <use xlink:href="#fa-globe"></use>
-                    </svg>
-                    <h2>Fluxos mais complexos.</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <svg class="fa-lock">
-                      <use xlink:href="#fa-lock"></use>
-                    </svg>
-                    <h2>Integração com uma API de Inteligência artificial visando, melhorar a experiência da conversa.</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <svg class="fa-lock">
-                      <use xlink:href="#fa-lock"></use>
-                    </svg>
-                    <h2>POSSIBILIDADE: Integração com Facebook Messenger, Whatsapp e Telegram.</h2>
-                  </div>
-                </li>
-              </ul>
-            </div>
+        </li>
+        <li>
+          <div>
+            <h2>
+              Descentralização da informação
+            </h2>
           </div>
-          <!-- .end .wrap -->
-        </section>
+        </li>
 
-        <section class="bg-apple">
-          <div class="wrap">
-            <div class="content-left">
-              <h1 style="font-size: 200px;margin: 162px;">V3</h1>
+      </ul>
+    </div>
+  </section>
+
+  <section class="fullscreen slide bg-apple ">
+
+    <div class="card-50">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1511345624864-d6cf46344e8c?ixlib=rb-0.3.5&s=af772bcd9570adc24ca5e70f00afcc12&auto=format&fit=crop&w=700&q=80" >
+
+      </figure>
+      <!-- end figure-->
+      <div class="flex-content">
+        <h2>Leads desqualificados
+        </h2>
+
+        <p class="text-intro">Desperdício de tempo e dinheiro em oportunidades que não serão convertidas em clientes por estar fora do foco da empresa</p>
+
+      </div>
+      <!-- end .flex-content-->
+    </div>
+
+  </section>
+
+  <section class="fullscreen bg-apple aligncenter">
+    <div class="embed dark">
+      <video autoplay muted loop poster="image.jpg">
+        <source src="/static/videos/343645551.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="wrap zoomIn">
+        <h1>          
+          Proposta
+        </h1>
+      </div>
+      <!-- .end .wrap -->
+    </section>
+
+    <section class="bg-apple">
+      <div class="wrap">
+        <h2>Soluções</h2>
+        <ul class="flexblock features">
+          <li>
+            <div>
+              <h2>
+                Qualificação de leads.
+              </h2>
             </div>
-            <div class="content-right">
-              <ul class="flexblock specs">
-                <li>
-                  <div>
-                    <svg class="fa-bolt">
-                      <use xlink:href="#fa-bolt"></use>
-                    </svg>
-                    <h2>Melhorias das funcionalidades da V1 e V2.</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <svg class="fa-globe">
-                      <use xlink:href="#fa-globe"></use>
-                    </svg>
-                    <h2>POSSIBILIDADE: Criação de um app personalizado para o cliente disponibilizar para as pessoas entrarem, simular os planos, gerar um agendamento de conversa ou já iniciar um conversa via chat.</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <svg class="fa-lock">
-                      <use xlink:href="#fa-lock"></use>
-                    </svg>
-                    <h2>POSSIBILIDADE: Criação de um app de  administração das funcionalidades e analisar os dados do Deathstar.</h2>
-                  </div>
-                </li>
-              </ul>
+          </li>
+          <li>
+            <div>
+              <h2>
+                Geração de agendamentos.
+              </h2>
             </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
+          </li>
+          <li>
+            <div>
+              <h2>
+                Centralizar a entrada de leads por um único sistema, porém o lead poderá acessar por multicanais.
+              </h2>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <section class="bg-apple aligncenter">
-          <h2 class="text-emoji zoomIn">😎</h2>
-          <h3><strong>Obrigado!</strong></h2>
-          <p><a href="#" title="">Daniel e Diogo</a></p>
-        </section>
-      </article>
-    </main>
-    <!--main-->
+    <section class="fullscreen slide bg-apple ">
+      <!--.wrap = container (width: 90%) -->
+      <div class="card-50">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1493689485253-f07fcbfc731b?ixlib=rb-0.3.5&s=5dd7fc7b1d80befa2304b2640c848ac9&auto=format&fit=crop&w=1633&q=80" >
 
-    <!-- Required -->
-    <script src="../static/js/webslides.js"></script>
+        </figure>
+        <!-- end figure-->
+        <div class="flex-content">
+          <h1>Diferencial</h1>
+          <p class="text-intro">Qualificação de leads através de uma conversa que será aproximada a uma conversa natural, poupando a utilização de um pré-vendas.</p>
 
-    <script>
-      window.ws = new WebSlides();
-    </script>
+        </div>
+        <!-- end .flex-content-->
+      </div>
 
-    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
-    <script defer src="../static/js/svg-icons.js"></script>
 
-  </body>
+
+      <!-- .end .wrap -->
+    </section>
+
+    <section class="bg-apple">
+
+      <div class="wrap">
+        <div class="content-left">
+          <h1 style="font-size: 200px;margin: 162px;">V1</h1>
+        </div>
+        <div class="content-right">
+          <ul class="flexblock specs">
+            <li>
+              <div>
+                <svg class="fa-bolt">
+                  <use xlink:href="#fa-paint-brush"></use>
+                </svg>
+                <h2>Estilização</h2>
+              </div>
+            </li>
+            <li>
+              <div>
+                <svg class="fa-globe">
+                  <use xlink:href="#fa-comments-o"></use>
+                </svg>
+                <h2>Montagem de fluxo de conversa de acordo com a necessidade do negócio do cliente e estabelecimento dos parâmetros que irão classificar o lead.</h2>
+              </div>
+            </li>
+            <li>
+              <div>
+                <svg class="fa-lock">
+                  <use xlink:href="#fa-line-chart"></use>
+                </svg>
+                <h2>Melhoria nas integrações com RD e Analytics e Possibilidade de outras integrações</h2>
+              </div>
+            </li>
+            <li>
+              <div>
+                <svg class="fa-lock">
+                  <use xlink:href="#fa-calendar"></use>
+                </svg>
+                <h2>Integração com Google Agenda para geração de agendamentos.</h2>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- .end .wrap -->
+    </section>
+
+
+
+
+
+    <section class="fullscreen slide bg-apple ">
+
+      <div class="card-50">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1519377345644-937ef9754740?ixlib=rb-0.3.5&s=f65e048b79a9aa7eb27ec7ca33603ca0&auto=format&fit=crop&w=1658&q=80" >
+
+        </figure>
+        <!-- end figure-->
+        <div class="flex-content">
+          <h1>Monetização</h1>
+          <p class="text-intro">Disponibilização de 3 níveis de planos, contemplando diferentes níveis de funcionalidades. Básico, Intermediário e Avançado</p>
+
+        </div>
+        <!-- end .flex-content-->
+      </div>
+
+
+
+
+  </section>
+
+  <section class="bg-apple">
+    <div class="wrap">
+
+      <div class="content-left">
+        <img style="width: 335px;margin-left: 100px;" src="https://www.drift.com/wp-content/uploads/2016/10/Drift_logo_white.svg">
+      </div>
+      <div class="content-right">
+        <h2>
+          Concorrente / Benchmark
+        </h2>
+        <p>Já existe uma empresa que oferece um serviço parecido, porém muito básico.</p>
+        <p>
+          <a href="https://www.drift.com/" class="button ghost" title="Abrir" target="_blank">Abrir &rsaquo;</a>
+        </p>
+      </div>
+    </div>
+    <!-- .end .wrap -->
+  </section>
+
+  <section class="fullscreen bg-black aligncenter">
+    <div class="embed dark">
+      <video autoplay loop muted >
+        <source src="/static/videos/739127578.mp4" type="video/mp4">
+        </video>
+      </div><!-- .embed -->
+      <!-- .wrap = container (width: 90%) -->
+      <div class="wrap size-50">
+        <h1><strong>Mais uma coisa...</strong></h1>
+        <h4>Já estamos pensando no futuro</h4>
+      </div>
+      <!-- .end .wrap -->
+    </section>
+
+    <section class=" fullscreen bg-apple">
+      <div class="embed dark">
+        <video autoplay loop muted >
+          <source src="/static/videos/722741424.mp4" type="video/mp4">
+          </video>
+        </div><!-- .embed -->
+
+
+      <div class="wrap">
+        <div class="content-left">
+          <h1 style="font-size: 200px;margin: 162px;">V2</h1>
+        </div>
+        <div class="content-right">
+          <ul class="flexblock specs">
+            <li>
+              <div>
+                <svg class="fa-bolt">
+                  <use xlink:href="#fa-bolt"></use>
+                </svg>
+                <h2>Melhorias de funcionalidades da V1</h2>
+              </div>
+            </li>
+            <li>
+              <div>
+                <svg class="fa-globe">
+                  <use xlink:href="#fa-globe"></use>
+                </svg>
+                <h2>Fluxos mais complexos.</h2>
+              </div>
+            </li>
+            <li>
+              <div>
+                <svg class="fa-lock">
+                  <use xlink:href="#fa-lock"></use>
+                </svg>
+                <h2>Integração com uma API de Inteligência artificial visando, melhorar a experiência da conversa.</h2>
+              </div>
+            </li>
+            <li>
+              <div>
+                <svg class="fa-comments">
+                  <use xlink:href="#fa-comments"></use>
+                </svg>
+                <h2>POSSIBILIDADE: Integração com Facebook Messenger, Whatsapp e Telegram.</h2>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- .end .wrap -->
+    </section>
+
+    <section class="fullscreen bg-apple">
+
+      <div class="embed dark">
+        <video autoplay loop muted >
+          <source src="/static/videos/722741424.mp4" type="video/mp4">
+          </video>
+        </div><!-- .embed -->
+
+      <div class="wrap">
+        <div class="content-left">
+          <h1 style="font-size: 200px;margin: 162px;">V3</h1>
+        </div>
+        <div class="content-right">
+          <ul class="flexblock specs">
+            <li>
+              <div>
+                <svg class="fa-bolt">
+                  <use xlink:href="#fa-bolt"></use>
+                </svg>
+                <h2>Melhorias das funcionalidades da V1 e V2.</h2>
+              </div>
+            </li>
+            <li>
+              <div>
+                <svg class="fa-globe">
+                  <use xlink:href="#fa-globe"></use>
+                </svg>
+                <h2>POSSIBILIDADE: Criação de um app personalizado para o cliente disponibilizar para as pessoas entrarem, simular os planos, gerar um agendamento de conversa ou já iniciar um conversa via chat.</h2>
+              </div>
+            </li>
+            <li>
+              <div>
+                <svg class="fa-lock">
+                  <use xlink:href="#fa-lock"></use>
+                </svg>
+                <h2>POSSIBILIDADE: Criação de um app de  administração das funcionalidades e analisar os dados do Deathstar.</h2>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- .end .wrap -->
+    </section>
+
+    <section class="bg-apple aligncenter">
+      <h2 class="text-emoji zoomIn">😎</h2>
+      <h3><strong>Obrigado!</strong></h2>
+        <p><a href="#" title="">Daniel e Diogo</a></p>
+      </section>
+    </article>
+  </main>
+  <!--main-->
+
+  <!-- Required -->
+  <script src="../static/js/webslides.js"></script>
+
+  <script>
+  window.ws = new WebSlides();
+  </script>
+
+  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+  <script defer src="../static/js/svg-icons.js"></script>
+
+</body>
 </html>
